@@ -38,3 +38,5 @@ Written by __farid@joubbi.se__
 
 http://www.joubbi.se/monitoring.html
 
+https://github.com/network-automation/cisco_ios_command_parsers
+
