@@ -25,9 +25,9 @@
       register: name
 
     - name: match hardware
-      # Loopback devices will show null since the type doesnt end with a comma.
+      # Loopback devices ends with a newline, while others end with a comma.
       pattern_match:
-        regex: "Hardware is (.*),"
+        regex: "Hardware is (.*?)(?:,|\\\n)"
         content: "{{ item }}"
       register: type
 
